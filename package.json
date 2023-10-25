@@ -1,0 +1,32 @@
+{
+  "name": "discord-api",
+  "version": "1.0.0",
+  "description": "Api for a connection to everything on the server side for the frontend of the discord, this api should be able to connect to a mobile app and website page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woragis/discord-api.git"
+  },
+  "keywords": [
+    "discord",
+    "social-media",
+    "social",
+    "project"
+  ],
+  "author": "woragis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woragis/discord-api/issues"
+  },
+  "homepage": "https://github.com/woragis/discord-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "mongoose": "^7.6.3",
+    "pg": "^8.11.3"
+  }
+}
