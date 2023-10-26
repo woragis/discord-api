@@ -90,5 +90,8 @@ const loginUser = async (req, res) => {
     await client.end();
   }
 };
+const logout = async (req, res) => {
+  // destroy session / cookies
+};
 
-module.exports = { registerUser, loginUser };
+module.exports = { registerUser, loginUser, logout };
