@@ -41,5 +41,7 @@ const logger = require("./middlewares/log");
 app.use(logger);
 const authentication = require("./routes/authentication");
 app.use("/auth", authentication);
+const messages = require("./routes/messages");
+app.use("/messages", messages);
 
 app.listen(port, () => console.log(`Server Running on ${port}`));
