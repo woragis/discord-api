@@ -37,6 +37,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.set("trust proxy", 1);
 
+const logger = require("./middlewares/log");
+app.use(logger);
 const authentication = require("./routes/authentication");
 app.use("/auth", authentication);
 
