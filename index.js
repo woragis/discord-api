@@ -23,14 +23,14 @@ app.use(
       httpOnly: false,
       maxAge: 1000 * 60 * 10,
     },
-  })
+  }),
 );
 redisClient.connect().catch(console.error);
 redisClient.on("error", (err) =>
-  console.log("Could not establish a connection with redis.\n" + err)
+  console.log("Could not establish a connection with redis.\n" + err),
 );
 redisClient.on("connect", (err) =>
-  console.log("Connected to redis successfully")
+  console.log("Connected to redis successfully"),
 );
 
 app.use(express.json());
